@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import Navbar from "./Component/Navbar/Navbar";
 
 function App() {
-  return <h1>hello nav</h1>;
+  return <Navbar />;
 }
 
 export default App;
