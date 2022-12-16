@@ -1,4 +1,4 @@
-const Dropdown = ({ text, dropdown = true }) => {
+const Dropdown = ({ text, links = [], dropdown = true }) => {
   return (
     <div className="group">
       <p
@@ -18,20 +18,20 @@ const Dropdown = ({ text, dropdown = true }) => {
       {dropdown ? (
         <>
           <div
-            class="absolute mt-[16px] hidden w-[200px]
-            flex-col
-            bg-white drop-shadow-lg hover:flex peer-hover:flex"
+            className="absolute hidden w-[200px] cursor-pointer
+            flex-col border-t-[16px] border-black
+            bg-[#292929] pb-2 text-[#c7c7c7] drop-shadow-lg hover:flex peer-hover:flex"
           >
-            <div className="h-2 bg-[#eb0029] "></div>
-            <a class="px-5 py-3 text-black" href="#">
-              About Us
-            </a>
-            <a class="px-5 py-3 text-black" href="#">
-              Contact Us
-            </a>
-            <a class="px-5 py-3 text-black" href="#">
-              Privacy Policy
-            </a>
+            <div className="h-[4px] bg-[#eb0029] "></div>
+            {links.map((link, index) => (
+              <a
+                key={index}
+                class="my-1 mx-3  rounded-md px-5 py-3 text-sm hover:bg-[#333333] hover:text-white"
+                href="#"
+              >
+                {link}
+              </a>
+            ))}
           </div>
         </>
       ) : (
