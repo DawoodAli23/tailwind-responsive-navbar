@@ -1,3 +1,10 @@
+created riot navbar clone for practice, it is not 100% like theirs 
+refrence:
+![refrence](https://user-images.githubusercontent.com/59256614/208041801-dcf2cef4-ecad-4c5a-902f-5e969d5a3edc.png)
+my implementation:
+![my implementaion](https://user-images.githubusercontent.com/59256614/208041901-6e0acc73-561e-4ade-a536-574a866a7633.gif)
+
+
 # template-vite-react-tailwind-v3
 
 - **template of:** vite + react
